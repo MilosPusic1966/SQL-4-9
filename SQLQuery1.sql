@@ -1,0 +1,10 @@
+use MilosP2021
+
+CREATE TABLE Ocena49 (
+ID INT IDENTITY(1,1) PRIMARY KEY,
+Ucenik NVARCHAR(30),
+Predmet NVARCHAR(30),
+Nastavnik NVARCHAR(30),
+Ocena INT,
+Datum DATETIME
+)

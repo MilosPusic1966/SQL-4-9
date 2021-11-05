@@ -8,3 +8,18 @@ Nastavnik NVARCHAR(30),
 Ocena INT,
 Datum DATETIME
 )
+DROP TABLE Ocena_Audit
+CREATE TABLE Ocena_Audit (
+ID INT IDENTITY(1,1),
+ID_Ocena INT,
+OldUcenik NVARCHAR(30),
+NewUcenik NVARCHAR(30),
+OldPredmet NVARCHAR(30),
+NewPredmet NVARCHAR(30),
+OldNastavnik NVARCHAR(30),
+NewNastavnik NVARCHAR(30),
+OldOcena INT,
+NewOcena INT,
+OldDatum DATETIME,
+NewDatum DATETIME
+)

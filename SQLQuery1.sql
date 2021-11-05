@@ -12,6 +12,7 @@ DROP TABLE Ocena_Audit
 CREATE TABLE Ocena_Audit (
 ID INT IDENTITY(1,1),
 Akcija NVARCHAR(20),
+Datum_Akcije DATETIME,
 ID_Ocena INT,
 OldUcenik NVARCHAR(30),
 NewUcenik NVARCHAR(30),
